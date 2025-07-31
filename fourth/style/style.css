@@ -1,0 +1,26 @@
+.link{
+    text-decoration: none;
+    text-transform: none;
+}
+
+.link:hover{
+    border-bottom: 1px solid black;
+}
+
+.link:visited{
+    color: gold;
+}
+
+.anchor{
+    background-color: black;
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.anchor:hover{
+    text-decoration:underline;
+}

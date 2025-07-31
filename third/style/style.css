@@ -1,0 +1,24 @@
+.card{
+    border: 2px solid black;
+    padding: 20px 25px;
+    display: inline-block;
+    width: 300px;
+    border-radius: 10px;
+    background-color: lightgrey;
+}
+
+h2{
+    margin: 0 0 10px;
+}
+
+h3{
+    margin: 0 0 10px;
+}
+
+ul{
+    margin-bottom: 0;
+}
+
+li{
+    margin-top: 5px;
+}
