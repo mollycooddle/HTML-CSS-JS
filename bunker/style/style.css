@@ -1,0 +1,84 @@
+html{
+    background-color: lightslategrey;
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+body{
+    background-image: url('../img/bunker.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.info{
+    height: 95px;
+    width: 96%;
+    border: 2px solid black;
+    padding: 5px 25px 30px 25px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(1, 30, 26, 0.9);
+    color: white;
+}
+.card{
+    margin-top: 5px;
+    color: white;
+    height: 225px;
+    width: 280px;
+    border: 2px solid black;
+    padding: 20px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(74, 69, 89, 0.8);
+    vertical-align: top;
+}
+
+.hide{
+    color: rgba(0, 0, 0, 0);
+}
+
+.sect{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.sect2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.leave{
+    color: rgba(0, 0, 0, 0);
+    background-image: url('../img/blocked.jpeg');
+    opacity: 0.4 ;
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 225px;
+    width: 280px;
+    margin-top: 5px;
+    padding: 20px 10px;
+}
+
+.rade{
+    color: rgba(0, 0, 0, 0);
+    background-image: url('../img/rade.jpg');
+    opacity: 0.4 ;
+    background-size: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 225px;
+    width: 280px;
+    margin-top: 5px;
+    padding: 20px 10px;
+}
