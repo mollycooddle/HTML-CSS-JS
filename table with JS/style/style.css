@@ -1,0 +1,17 @@
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.All{
+    width: 75px;
+}
+
+ .child{
+    text-align: left;
+}
