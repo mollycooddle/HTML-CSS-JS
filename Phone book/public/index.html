@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Электронная записная книжка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; max-width:900px; margin:20px auto; padding:10px;}
+    .row { display:flex; gap:10px; }
+    input, textarea, select, button { padding:8px; font-size:14px; }
+    .note { border:1px solid #ddd; padding:10px; margin:10px 0; border-radius:6px; }
+    .tags { color:#555; font-size:13px; }
+    .files a { display:block; }
+    nav { margin-bottom:15px; }
+    .hidden { display:none; }
+  </style>
+</head>
+<body>
+  <h1>Электронная записная книжка</h1>
+
+  <div id="auth">
+    <div id="userArea">
+      <span id="welcome"></span>
+      <button id="logoutBtn">Выйти</button>
+    </div>
+    <div id="authForms">
+      <h3>Вход / регистрация</h3>
+      <input id="username" placeholder="Имя пользователя">
+      <input id="password" type="password" placeholder="Пароль">
+      <button id="loginBtn">Войти</button>
+      <button id="registerBtn">Зарегистрироваться</button>
+      <div id="authMsg"></div>
+    </div>
+  </div>
+
+  <nav>
+    <button id="modeCreate">Создать запись</button>
+    <button id="modeSearch">Поиск записей</button>
+  </nav>
+
+  <section id="createSection" class="hidden">
+    <h2>Создать запись</h2>
+    <form id="noteForm">
+      <div>
+        <input id="title" name="title" placeholder="Наименование записи (заголовок)" required style="width:100%">
+      </div>
+      <div>
+        <textarea id="text" name="text" rows="6" placeholder="Текст записи" style="width:100%"></textarea>
+      </div>
+      <div>
+        <input id="tagsInput" placeholder="Метки (через запятую) или добавьте существующие">
+        <button id="addTagBtn" type="button">Добавить метку в список</button>
+      </div>
+      <div id="tagsList" class="tags"></div>
+      <div>
+        <label>Файлы: <input id="files" name="files" type="file" multiple></label>
+      </div>
+      <div style="margin-top:8px;">
+        <button type="submit">Сохранить запись</button>
+      </div>
+      <div id="createMsg"></div>
+    </form>
+  </section>
+
+  <section id="searchSection" class="hidden">
+    <h2>Поиск</h2>
+    <div>
+      <label>По метке: <input id="searchTag"> <button id="searchByTag">Найти</button></label>
+    </div>
+    <div>
+      <label>По слову в заголовке: <input id="searchTitle"> <button id="searchByTitle">Найти</button></label>
+    </div>
+    <div>
+      <label>По слову в тексте: <input id="searchText"> <button id="searchByText">Найти</button></label>
+    </div>
+    <div>
+      <button id="listAll">Показать все мои записи</button>
+    </div>
+
+    <h3>Результаты</h3>
+    <div id="results"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
